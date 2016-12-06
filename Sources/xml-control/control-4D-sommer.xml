@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+
+    Control Datei für die Funkdosen-Steuerung, by Peter K. Boxler, August 2014
+     Pro Steckdose (max 4) sind für jeden Wochentag (0=Sonntag bis 6=Samstag)
+     beliebige Sequenzen definierbar. Eine Sequenz besteht je aus Einschalten/Ausschalten
+     zu bestimmten Zeitpunkten (HHMM)
+     
+     Ist Input-File für die Python Applikation switch-lights.py
+
+    Mit 4 Dosen für Sommer bei Peter
+    Dose 1 ist Wohnzimmer
+    Dose 2 ist Küche
+    Dose 3 ist Arbeitszimmer
+    Dose 4 ist Badezimmer
+-->
+
+<control>
+<file-id>4 Dosen Sommer bei Peter</file-id>
+
+<!--
+Dose Nummer 1  Wohnzimmer***************************** Dose 1 
+-->
+
+<dose>
+<dose-nr>
+ 1
+</dose-nr>
+<day>
+<weekday>0</weekday>
+ <sequence>
+  	<start>00.10</start>
+  	<stop>00.30</stop>
+  </sequence>
+  <sequence>
+  	<start>20.45</start>
+  	<stop>22.00</stop>
+  </sequence>
+   <sequence>
+  	<start>22.45</start>
+  	<stop>23.15</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>1</weekday>
+ <sequence>
+  	<start>00.15</start>
+  	<stop>00.25</stop>
+  </sequence>
+ <sequence>
+  	<start>21.05</start>
+  	<stop>22.20</stop>
+  </sequence>
+   <sequence>
+  	<start>23.05</start>
+  	<stop>23.42</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>2</weekday>
+ <sequence>
+  	<start>20.55</start>
+  	<stop>21.45</stop>
+  </sequence>
+   <sequence>
+  	<start>22.20</start>
+  	<stop>23.22</stop>
+  </sequence>  
+  </day>
+  <day>
+<weekday>3</weekday>
+ <sequence>
+  	<start>00.02</start>
+  	<stop>00.22</stop>
+  </sequence>
+ <sequence>
+  	<start>20.50</start>
+  	<stop>22.05</stop>
+  </sequence>
+   <sequence>
+  	<start>22.55</start>
+  	<stop>23.40</stop>
+  </sequence>
+   </day>
+  <day>
+<weekday>4</weekday>
+ <sequence>
+  	<start>00.02</start>
+  	<stop>00.22</stop>
+  </sequence>
+ <sequence>
+  	<start>21.30</start>
+  	<stop>22.40</stop>
+  </sequence>
+   <sequence>
+  	<start>22.55</start>
+  	<stop>23.20</stop>
+  </sequence>
+  </day>
+
+  <day>
+<weekday>5</weekday>
+ <sequence>
+  	<start>00.07</start>
+  	<stop>00.17</stop>
+  </sequence>
+ <sequence>
+  	<start>21.00</start>
+  	<stop>21.40</stop>
+  </sequence>
+   <sequence>
+  	<start>22.00</start>
+  	<stop>23.15</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>6</weekday>
+ <sequence>
+  	<start>00.02</start>
+  	<stop>00.22</stop>
+  </sequence>
+ <sequence>
+  	<start>20.25</start>
+  	<stop>22.05</stop>
+  </sequence>
+   <sequence>
+  	<start>23.10</start>
+  	<stop>23.40</stop>
+  </sequence>
+  </day>
+
+</dose>
+<!--
+Dose Nummer 2  Küche *************************** Dose 2 
+-->
+
+<dose>
+<dose-nr>
+ 2
+</dose-nr>
+<day>
+<weekday>0</weekday>
+
+  <sequence>
+  	<start>20.35</start>
+  	<stop>21.15</stop>
+  </sequence>
+   <sequence>
+  	<start>22.10</start>
+  	<stop>22.45</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>1</weekday>
+ <sequence>
+  	<start>20.15</start>
+  	<stop>21.14</stop>
+  </sequence>
+   <sequence>
+  	<start>23.20</start>
+  	<stop>23.40</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>2</weekday>
+ <sequence>
+  	<start>19.50</start>
+  	<stop>21.15</stop>
+  </sequence>
+   <sequence>
+  	<start>23.45</start>
+  	<stop>23.56</stop>
+  </sequence>  
+  </day>
+  <day>
+<weekday>3</weekday>
+ <sequence>
+  	<start>00.05</start>
+  	<stop>00.24</stop>
+  </sequence>
+ <sequence>
+  	<start>20.45</start>
+  	<stop>21.40</stop>
+  </sequence>
+   <sequence>
+  	<start>22.16</start>
+  	<stop>22.36</stop>
+  </sequence>
+   </day>
+  <day>
+<weekday>4</weekday>
+
+ <sequence>
+  	<start>20.45</start>
+  	<stop>21.28</stop>
+  </sequence>
+   <sequence>
+  	<start>22.47</start>
+  	<stop>23.10</stop>
+  </sequence>
+  </day>
+
+  <day>
+<weekday>5</weekday>
+ <sequence>
+  	<start>00.012</start>
+  	<stop>00.27</stop>
+  </sequence>
+ <sequence>
+  	<start>20.30</start>
+  	<stop>21.25</stop>
+  </sequence>
+   <sequence>
+  	<start>22.15</start>
+  	<stop>22.35</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>6</weekday>
+ <sequence>
+  	<start>20.25</start>
+  	<stop>21.45</stop>
+  </sequence>
+  </day>
+
+</dose>
+<!--
+Dose Nummer 3  Arbeitszimmer*********************************** Dose 3
+-->
+
+<dose>
+<dose-nr>
+ 3
+</dose-nr>
+<day>
+<weekday>0</weekday>
+
+   <sequence>
+  	<start>19.55</start>
+  	<stop>21.12</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>1</weekday>
+ <sequence>
+  	<start>20.17</start>
+  	<stop>21.30</stop>
+  </sequence>
+   <sequence>
+  	<start>23.18</start>
+  	<stop>23.47</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>2</weekday>
+ <sequence>
+  	<start>20.40</start>
+  	<stop>21.45</stop>
+  </sequence>
+   <sequence>
+  	<start>23.36</start>
+  	<stop>23.56</stop>
+  </sequence>  
+  </day>
+
+  <day>
+
+<weekday>3</weekday>
+ <sequence>
+  	<start>00.09</start>
+  	<stop>00.29</stop>
+  </sequence>
+ <sequence>
+  	<start>20.50</start>
+  	<stop>22.02</stop>
+  </sequence>
+   <sequence>
+  	<start>23.30</start>
+  	<stop>23.49</stop>
+  </sequence>
+   </day>
+  <day>
+<weekday>4</weekday>
+
+ <sequence>
+  	<start>20.05</start>
+  	<stop>22.00</stop>
+  </sequence>
+   <sequence>
+  	<start>22.35</start>
+  	<stop>23.14</stop>
+  </sequence>
+  </day>
+
+  <day>
+<weekday>5</weekday>
+ <sequence>
+  	<start>00.10</start>
+  	<stop>00.37</stop>
+  </sequence>
+ <sequence>
+  	<start>20.47</start>
+  	<stop>21.27</stop>
+  </sequence>
+   <sequence>
+  	<start>23.15</start>
+  	<stop>23.34</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>6</weekday>
+ <sequence>
+  	<start>20.37</start>
+  	<stop>21.35</stop>
+  </sequence>
+  </day>
+
+
+</dose>
+
+<!--
+Dose Nummer 4  Badezimmer******************************* Dose 4
+-->
+
+<dose>
+<dose-nr>
+ 4
+</dose-nr>
+<day>
+<weekday>0</weekday>
+
+   <sequence>
+  	<start>22.52</start>
+  	<stop>23.04</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>1</weekday>
+ <sequence>
+  	<start>22.17</start>
+  	<stop>22.29</stop>
+  </sequence>
+   <sequence>
+  	<start>23.18</start>
+  	<stop>23.30</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>2</weekday>
+ <sequence>
+  	<start>21.55</start>
+  	<stop>22.15</stop>
+  </sequence>
+   <sequence>
+  	<start>23.36</start>
+  	<stop>23.46</stop>
+  </sequence>  
+  </day>
+
+  <day>
+
+<weekday>3</weekday>
+   <sequence>
+  	<start>01.30</start>
+  	<stop>01.38</stop>
+  </sequence>
+
+ <sequence>
+  	<start>22.25</start>
+  	<stop>22.41</stop>
+  </sequence>
+ <sequence>
+  	<start>22.56</start>
+  	<stop>23.08</stop>
+  </sequence>
+   </day>
+  <day>
+<weekday>4</weekday>
+
+ <sequence>
+  	<start>22.30</start>
+  	<stop>22.46</stop>
+  </sequence>
+   <sequence>
+  	<start>23.53</start>
+  	<stop>23.58</stop>
+  </sequence>
+  </day>
+
+  <day>
+<weekday>5</weekday>
+ <sequence>
+  	<start>00.10</start>
+  	<stop>00.17</stop>
+  </sequence>
+ <sequence>
+  	<start>21.47</start>
+  	<stop>21.57</stop>
+  </sequence>
+   <sequence>
+  	<start>23.15</start>
+  	<stop>23.21</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>6</weekday>
+ <sequence>
+  	<start>23.07</start>
+  	<stop>23.16</stop>
+  </sequence>
+  </day>
+
+
+</dose>
+
+
+</control>

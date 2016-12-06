@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+
+    Control Datei für die Funkdosen-Steuerung, by Peter K. Boxler, August 2014
+     Pro Steckdose (max 4) sind für jeden Wochentag (0=Sonntag bis 6=Samstag)
+     beliebige Sequenzen definierbar. Eine Sequenz besteht je aus Einschalten/Ausschalten
+     zu bestimmten Zeitpunkten (HHMM)
+     
+     Ist Input-File für die Python Applikation switch-lights.py
+
+    Mit 4 Dosen für Winter bei Peter
+    Dose 1 ist Wohnzimmer
+    Dose 2 ist Küche
+    Dose 3 ist Arbeitszimmer
+    Dose 4 ist Badezimmer
+-->
+
+<control>
+<file-id>1 Dose Testfile</file-id>
+
+<!--
+Dose Nummer 1  Wohnzimmer***************************** Dose 1 
+-->
+
+<dose>
+<dose-nr>
+ 1
+</dose-nr>
+<day>
+<weekday>0</weekday>
+ <sequence>
+  	<start>00.10</start>
+  	<stop>00.40</stop>
+  </sequence>
+  <sequence>
+  	<start>18.00</start>
+  	<stop>22.00</stop>
+  </sequence>
+   <sequence>
+  	<start>22.45</start>
+  	<stop>23.15</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>1</weekday>
+ <sequence>
+  	<start>00.15</start>
+  	<stop>00.35</stop>
+  </sequence>
+ <sequence>
+  	<start>20.25</start>
+  	<stop>22.20</stop>
+  </sequence>
+   <sequence>
+  	<start>23.05</start>
+  	<stop>23.42</stop>
+  </sequence>
+  </day>
+  <day>
+<weekday>2</weekday>
+ <sequence>
+  	<start>19.35</start>
+  	<stop>23.05</stop>
+  </sequence>
+   <sequence>
+  	<start>23.15</start>
+  	<stop>23.42</stop>
+  </sequence>  
+  </day>
+  <day>
+<weekday>3</weekday>
+ <sequence>
+  	<start>00.02</start>
+  	<stop>00.22</stop>
+  </sequence>
+ <sequence>
+  	<start>19.40</start>
+  	<stop>22.00</stop>
+  </sequence>
+   <sequence>
+  	<start>22.55</start>
+  	<stop>23.40</stop>
+  </sequence>
+   </day>
+  <day>
+<weekday>4</weekday>
+ <sequence>
+  	<start>00.02</start>
+  	<stop>00.22</stop>
+  </sequence>
+ <sequence>
+  	<start>18.00</start>
+  	<stop>20.00</stop>
+  </sequence>
+   <sequence>
+  	<start>22.55</start>
+  	<stop>23.20</stop>
+  </sequence>
+  </day>
+
+</dose>
+
+
+</control>

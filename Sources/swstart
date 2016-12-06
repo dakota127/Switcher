@@ -1,0 +1,4 @@
+#!/bin/bash
+##################################################################
+cd switcher
+sudo python swdaem.py start
